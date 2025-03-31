@@ -12,6 +12,7 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
+  base: "/ygor-diniz-psicologia-vue",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
