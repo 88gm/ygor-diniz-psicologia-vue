@@ -1,6 +1,7 @@
 {
-  "name": "shadcn-vue-landing-page",
-  "description": "Shadcn/Vue landing page template using Vue, Shadcn/Vue + TypeScript + Tailwind CSS.",
+  "homepage": "http://88gm.github.io/ygor-diniz-psicologia-vue",
+  "name": "ygor-diniz-psicologia-vue",
+  "description": "Landing page usando Vue, Shadcn/Vue + TypeScript + Tailwind CSS.",
   "version": "0.1.1",
   "author": {
     "name": "Leopoldo Miranda",
