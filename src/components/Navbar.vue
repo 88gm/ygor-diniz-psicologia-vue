@@ -7,7 +7,7 @@ mode.value = "dark";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  // NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
@@ -124,7 +124,7 @@ const isOpen = ref<boolean>(false);
               </SheetTitle>
             </SheetHeader>
 
-            <div class="flex flex-col gap-2">
+            <!-- <div class="flex flex-col gap-2">
               <Button
                 v-for="{ href, label } in routeList"
                 :key="label"
@@ -139,7 +139,7 @@ const isOpen = ref<boolean>(false);
                   {{ label }}
                 </a>
               </Button>
-            </div>
+            </div> -->
           </div>
 
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
@@ -154,11 +154,11 @@ const isOpen = ref<boolean>(false);
     <!-- Desktop -->
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
-        <NavigationMenuItem>
+        <!-- <NavigationMenuItem> -->
           <!-- <NavigationMenuTrigger class="bg-card text-base">
             Features
           </NavigationMenuTrigger> -->
-          <NavigationMenuContent>
+          <!-- <NavigationMenuContent>
             <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
               <img
                 src="https://www.radix-vue.com/logo.svg"
@@ -181,7 +181,7 @@ const isOpen = ref<boolean>(false);
               </ul>
             </div>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> -->
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>

@@ -1,82 +1,82 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import {
-  Paintbrush,
-  MessageCircle,
-  TabletSmartphone,
-  BadgeCheck,
-  Goal,
-  PictureInPicture,
-  MousePointerClick,
-  Newspaper,
-} from "lucide-vue-next";
+// import {
+//   Paintbrush,
+//   MessageCircle,
+//   TabletSmartphone,
+//   BadgeCheck,
+//   Goal,
+//   PictureInPicture,
+//   MousePointerClick,
+//   Newspaper,
+// } from "lucide-vue-next";
 
-interface FeaturesProps {
-  icon: string;
-  title: string;
-  description: string;
-}
+// interface FeaturesProps {
+//   icon: string;
+//   title: string;
+//   description: string;
+// }
 
-const featureList: FeaturesProps[] = [
-  {
-    icon: "tabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
-  },
-  {
-    icon: "badgeCheck",
-    title: "Social Proof",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
-  },
-  {
-    icon: "goal",
-    title: "Targeted Content",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
-  },
-  {
-    icon: "pictureInPicture",
-    title: "Strong Visuals",
-    description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
-  },
-  {
-    icon: "mousePointerClick",
-    title: "Clear CTA",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
-  },
-  {
-    icon: "newspaper",
-    title: "Clear Headline",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
-  },
-];
+// const featureList: FeaturesProps[] = [
+//   {
+//     icon: "tabletSmartphone",
+//     title: "Mobile Friendly",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+//   },
+//   {
+//     icon: "badgeCheck",
+//     title: "Social Proof",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+//   },
+//   {
+//     icon: "goal",
+//     title: "Targeted Content",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+//   },
+//   {
+//     icon: "pictureInPicture",
+//     title: "Strong Visuals",
+//     description:
+//       "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+//   },
+//   {
+//     icon: "mousePointerClick",
+//     title: "Clear CTA",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+//   },
+//   {
+//     icon: "newspaper",
+//     title: "Clear Headline",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+//   },
+// ];
 
-const iconMap: Record<
-  string,
-  | typeof TabletSmartphone
-  | typeof BadgeCheck
-  | typeof Goal
-  | typeof PictureInPicture
-  | typeof Paintbrush
-  | typeof MousePointerClick
-  | typeof MessageCircle
-  | typeof Newspaper
-> = {
-  tabletSmartphone: TabletSmartphone,
-  badgeCheck: BadgeCheck,
-  goal: Goal,
-  pictureInPicture: PictureInPicture,
-  paintbrush: Paintbrush,
-  mousePointerClick: MousePointerClick,
-  messageCircle: MessageCircle,
-  newspaper: Newspaper,
-};
+// const iconMap: Record<
+//   string,
+//   | typeof TabletSmartphone
+//   | typeof BadgeCheck
+//   | typeof Goal
+//   | typeof PictureInPicture
+//   | typeof Paintbrush
+//   | typeof MousePointerClick
+//   | typeof MessageCircle
+//   | typeof Newspaper
+// > = {
+//   tabletSmartphone: TabletSmartphone,
+//   badgeCheck: BadgeCheck,
+//   goal: Goal,
+//   pictureInPicture: PictureInPicture,
+//   paintbrush: Paintbrush,
+//   mousePointerClick: MousePointerClick,
+//   messageCircle: MessageCircle,
+//   newspaper: Newspaper,
+// };
 </script>
 
 <template>
@@ -98,7 +98,7 @@ const iconMap: Record<
       facere tenetur.
     </h3>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <div
         v-for="{ icon, title, description } in featureList"
         :key="title"
@@ -124,7 +124,7 @@ const iconMap: Record<
           </CardContent>
         </Card>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
