@@ -11,7 +11,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  // NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -34,10 +34,10 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
+// interface FeatureProps {
+//   title: string;
+//   description: string;
+// }
 
 const routeList: RouteProps[] = [
   {
@@ -58,22 +58,22 @@ const routeList: RouteProps[] = [
   },
 ];
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
-  },
-];
+// const featureList: FeatureProps[] = [
+//   {
+//     title: "Showcase Your Value ",
+//     description: "Highlight how your product solves user problems.",
+//   },
+//   {
+//     title: "Build Trust",
+//     description:
+//       "Leverages social proof elements to establish trust and credibility.",
+//   },
+//   {
+//     title: "Capture Leads",
+//     description:
+//       "Make your lead capture form visually appealing and strategically.",
+//   },
+// ];
 
 const isOpen = ref<boolean>(false);
 </script>
@@ -93,7 +93,7 @@ const isOpen = ref<boolean>(false);
       <ChevronsDown
         class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
       />
-      ShadcnVue</a
+      Ygor Diniz</a
     >
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
@@ -155,9 +155,9 @@ const isOpen = ref<boolean>(false);
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger class="bg-card text-base">
+          <!-- <NavigationMenuTrigger class="bg-card text-base">
             Features
-          </NavigationMenuTrigger>
+          </NavigationMenuTrigger> -->
           <NavigationMenuContent>
             <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
               <img

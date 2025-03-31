@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
 
-import { Badge } from "@/components/ui/badge";
+import WhatsappIcon from "@/icons/WhatsappIcon.vue";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-vue-next";
+import { Instagram } from "lucide-vue-next";
+import { Avatar, AvatarFallback, AvatarImage, } from "@/components/ui/avatar"
 </script>
 
 <template>
@@ -13,15 +12,20 @@ import { ArrowRight } from "lucide-vue-next";
       class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
       <div class="text-center space-y-8">
-        <Badge
+
+        <Avatar class="size-80">
+          <AvatarImage src="https://i.ibb.co/rRxZd2G9/Screenshot-2025-03-31-020947.png" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        <!-- <Badge
           variant="outline"
           class="text-sm py-2"
         >
           <span class="mr-2 text-primary">
-            <Badge>New</Badge>
+            <Badge>Atendimento</Badge>
           </span>
-          <span> Design is out now! </span>
-        </Badge>
+          <span> Especial </span>
+        </Badge> -->
 
         <div
           class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
@@ -36,28 +40,24 @@ import { ArrowRight } from "lucide-vue-next";
         </div>
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          We're more than just a tool, we're a community of passionate creators.
-          Get access to exclusive resources, tutorials, and support.
+          Um texto bem bonito
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-            Get Started
-            <ArrowRight
-              class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-            />
+          <Button class="w-5/6 md:w-1/4 font-bold">
+            <a href="https://www.instagram.com/ygordiniz.psi" target="_blank">
+              <WhatsappIcon class="size-5 mr-2"/>
+            </a>
+            <a href="https://www.instagram.com/ygordiniz.psi" target="_blank">
+              Whatsapp
+            </a>
           </Button>
 
-          <Button
-            as-child
-            variant="secondary"
-            class="w-5/6 md:w-1/4 font-bold"
-          >
-            <a
-              href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
-              target="_blank"
-              >Github respository</a
-            >
+          <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
+            <a href="https://www.instagram.com/ygordiniz.psi" target="_blank">
+                <Instagram class="size-5 mr-2"/>
+                Instagram
+            </a>
           </Button>
         </div>
       </div>
