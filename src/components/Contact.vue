@@ -48,7 +48,7 @@ const handleSubmit = () => {
 <template>
   <section
     id="contact"
-    class="container py-24 sm:py-32"
+    class="container w-full lg:w-[60%] py-24 sm:py-32"
   >
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>

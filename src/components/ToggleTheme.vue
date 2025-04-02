@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
+<!-- <script setup lang="ts">
+// import { useColorMode } from "@vueuse/core";
+// const mode = useColorMode();
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-vue-next";
 </script>
@@ -30,4 +30,4 @@ import { Moon, Sun } from "lucide-vue-next";
 
     <span class="sr-only">Toggle theme</span>
   </Button>
-</template>
+</template> -->

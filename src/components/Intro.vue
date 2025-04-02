@@ -7,13 +7,13 @@ import { Avatar, AvatarFallback, AvatarImage, } from "@/components/ui/avatar"
 </script>
 
 <template>
-  <section class="container">
+  <section class="intro">
     <div
       class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
       <div class="text-center space-y-8">
 
-        <Avatar class="size-80">
+        <Avatar class="size-60">
           <AvatarImage src="https://i.ibb.co/rRxZd2G9/Screenshot-2025-03-31-020947.png" alt="@shadcn" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>

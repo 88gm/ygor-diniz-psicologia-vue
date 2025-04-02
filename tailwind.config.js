@@ -2,7 +2,7 @@ const animate = require("tailwindcss-animate");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  // darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
 
@@ -18,7 +18,7 @@ module.exports = {
       center: true,
       padding: "1.5rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "100%",
       },
     },
     extend: {

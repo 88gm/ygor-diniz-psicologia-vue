@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
-mode.value = "dark";
+mode.value = "light";
 
 import {
   NavigationMenu,
@@ -16,18 +16,14 @@ import {
 import {
   Sheet,
   SheetContent,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-
 import { ChevronsDown, Menu } from "lucide-vue-next";
-import GithubIcon from "@/icons/GithubIcon.vue";
-import ToggleTheme from "./ToggleTheme.vue";
+// import ToggleTheme from "./ToggleTheme.vue";
 
 interface RouteProps {
   href: string;
@@ -142,11 +138,11 @@ const isOpen = ref<boolean>(false);
             </div> -->
           </div>
 
-          <SheetFooter class="flex-col sm:flex-col justify-start items-start">
+          <!-- <SheetFooter class="flex-col sm:flex-col justify-start items-start">
             <Separator class="mb-2" />
 
             <ToggleTheme />
-          </SheetFooter>
+          </SheetFooter> -->
         </SheetContent>
       </Sheet>
     </div>
@@ -201,7 +197,7 @@ const isOpen = ref<boolean>(false);
       </NavigationMenuList>
     </NavigationMenu>
 
-    <div class="hidden lg:flex">
+    <!-- <div class="hidden lg:flex">
       <ToggleTheme />
 
       <Button
@@ -218,7 +214,7 @@ const isOpen = ref<boolean>(false);
           <GithubIcon class="size-5" />
         </a>
       </Button>
-    </div>
+    </div> -->
   </header>
 </template>
 
